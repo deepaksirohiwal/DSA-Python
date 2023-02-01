@@ -18,7 +18,12 @@ def InsertionSort(L):
             j=j-1 #change the focus
         #Now L[:i+1] is sorted
     return L
-
+'''
+outer loop iterates n times
+inner loop: i steps to insert L[i] in L[:i]
+T(n)=n(n-1)/2
+O(n^2)
+'''
 
 #Using recursion
 def Insert(L,v):
@@ -43,3 +48,22 @@ def Isort(L):
     #previous element
     L=Insert(Isort(L[:-1]),L[-1])
     return (L)
+
+'''
+TI(n) be the time taken by Insert
+TS(n) be the time taken by ISort
+TI(0)=1
+TI(n)=TI(n-1)+1
+Unwind to get TI(n)=n
+
+TS(0)=1
+TS(n)=TS(n-1)+TI(n-1)
+1+2+3..+n-1
+O(n^2)
+
+Note:
+worst case is O(n^2)
+unlike selection sort, not all cases take time n^2
+if the list is already sorted, Inset stops in 1 step
+overall time can be close to O(n)
+'''
