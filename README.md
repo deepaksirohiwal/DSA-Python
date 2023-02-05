@@ -6,3 +6,4 @@ Covers Data Structure and Algorithms using Python
     * Selection sort
     * Insertion sort
     * Merge Sort
+    * Counting Sort
