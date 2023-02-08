@@ -7,3 +7,4 @@ Covers Data Structure and Algorithms using Python
     * Insertion sort
     * Merge Sort
     * Counting Sort
+#example
