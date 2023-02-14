@@ -1,6 +1,6 @@
 #merge sort
 '''
-let n be the lenfht of the list
+let n be the length of the list
 Sort A[:m//2]
 Sort A[n//2:]
 Merge the sorted halves into B

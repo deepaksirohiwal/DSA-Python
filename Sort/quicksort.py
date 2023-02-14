@@ -16,3 +16,12 @@ def quicksort(sequence):#this will take a list of unordered sequence
             items_smaller.append(item)
 
     return quicksort(items_smaller)+[pivot]+quicksort(items_greater)
+
+'''
+if the pivot is the median
+O(nlog(n))
+if the pivot is maximum or minimum
+O(n^2)
+
+Already sorted:worst case!!
+'''
