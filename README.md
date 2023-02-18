@@ -7,3 +7,7 @@ Covers Data Structure and Algorithms using Python
     * Insertion sort
     * Merge Sort
     * Counting Sort
+3. Graphs
+    * Breadth First Search (BFS)
+    * Depth First Search (DFS)
+    
