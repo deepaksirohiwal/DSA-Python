@@ -10,4 +10,3 @@ Covers Data Structure and Algorithms using Python
 3. Graphs
     * Breadth First Search (BFS)
     * Depth First Search (DFS)
-    
