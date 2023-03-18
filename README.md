@@ -13,3 +13,5 @@ Covers Data Structure and Algorithms using Python
     * Dijkstra 
     * Bellman Ford
     * Floyd warshall
+    * Prims
+    * Kruskal

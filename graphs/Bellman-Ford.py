@@ -6,7 +6,7 @@ def bellmanford(WMat,s):
     for v in range(rows):
         distance[v]= infinity
     distance[s]=0
-    for i in range(rows):
+    for i in range(rows): #repeat this process n-1 times
         for u in range(rows):
             for v in range(cols):
                 #if there is connection

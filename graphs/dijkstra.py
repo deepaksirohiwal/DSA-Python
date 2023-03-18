@@ -12,8 +12,7 @@ def dijkstralist(Wlist,s):#take a list and source
     distance[s]=0
 
     for u in Wlist.keys():
-        #taking out the minimum distance, if it is not visited
-        nextd=min([distance[v] for v in Wlist.keys() if not visited[v]])
+        #taking out the minimum distance, if it is not visited``nextd=min([distance[v] for v in Wlist.keys() if not visited[v]])
         #list of the vertex which have distance equals to nextd
         nextvlist=[v for v in Wlist.keys() if (not visited[v]) and distance[v]==nextd]
         if nextvlist==[]:
