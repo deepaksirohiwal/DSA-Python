@@ -15,3 +15,5 @@ Covers Data Structure and Algorithms using Python
     * Floyd warshall
     * Prims
     * Kruskal
+4. AVL Tree
+5. Huffman coding
