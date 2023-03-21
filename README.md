@@ -17,3 +17,5 @@ Covers Data Structure and Algorithms using Python
     * Kruskal
 4. AVL Tree
 5. Huffman coding
+6. Counting Inversion
+7. Karatsuba 
