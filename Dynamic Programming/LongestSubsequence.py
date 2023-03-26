@@ -44,3 +44,34 @@ def lcs_memo(seq1,seq2):
         return memo[key]
     return recurse(0,0)
 print(lcs_memo(seq1,seq2))
+
+'''
+O(m*n)
+'''
+
+'''
+Dynamic programming
+1. create a table of (n1+1)*(n2+1) and initialize it with 0 where n1 and n2 are the length 
+    of the sequence.
+    table[i][j] represents the largest common subsequence of seq[:i] and seq[:j].
+2. If seq1[i]==seq2[j] then update the table 
+    table[i+1][j+1]=1+table[i][j]
+3. If seq1[i]!=seq2[j] then update the table
+    max of the diagonal
+    table[i+1][j+1]=max(table[i][j+1],table[i+1][j])
+'''
+def lsc_dp(seq1,seq2):
+    n1,n2=len(seq1), len(seq2)
+    #creating a matrix of size n1+1*n2*1
+    table=[[0 for x in range(n2+1)] for x in range(n1+1)]
+    for i in range(n1):
+        for j in range(n2):
+            if seq1[i]==seq2[j]:
+                table[i+1][j+1]=1+table[i][j]
+            else:
+                table[i+1][j+1]=max(table[i][j+1],table[i+1][j])
+    #return the last element of the matrix
+    return table[-1][-1]
+s='axc'
+t='ahbgdc'
+print(lsc_dp(s,t))
