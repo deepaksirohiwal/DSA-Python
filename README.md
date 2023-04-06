@@ -19,3 +19,4 @@ Covers Data Structure and Algorithms using Python
 5. Huffman coding
 6. Counting Inversion
 7. Karatsuba 
+8. Dynamic Programming
